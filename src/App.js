@@ -3,8 +3,8 @@ import './App.css';
 import surface from './surface.png';
 import rock from './rock.jpg'
 import Select from 'react-select'
-import React, {useState} from 'react'
-import {Container,Row,Col,Dropdown,DropdownButton,Navbar,Nav,NavDropdown, Button} from 'react-bootstrap'
+import React from 'react'
+import {Container,Row,Col,Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 const gngselectOptions = [
   {
@@ -72,9 +72,9 @@ var def=Array(20)
   for(var i=0; i<20; i++) def[i]=0
 
 const getColor = (selected, idx) => {
-  if(idx == 0 || idx == 39) return "red"
-  if(selected == 2) return ((idx & 1 ) ? "red" : "white")
-  if(selected == 3) return ((Math.random() * 2) >= 1) ? "red" : "white"
+  if(idx === 0 || idx === 39) return "red"
+  if(selected === 2) return ((idx & 1 ) ? "red" : "white")
+  if(selected === 3) return ((Math.random() * 2) >= 1) ? "red" : "white"
   return "red"
 }
 
@@ -101,7 +101,7 @@ class App extends React.Component {
   generateRes=()=>{
     var methods=[]
     for (var i=0;i<10;i++) methods.push({name:minMethods[i],score:this.state.scores[i]})
-    methods.sort((a,b)=>b.score-a .score)
+    methods.sort((a,b)=>b.score-a.score)
     return methods
   }
 
@@ -164,14 +164,14 @@ class App extends React.Component {
           
           <Col className="columns" style = {{position: "relative"}}>
             <Row>
-              <img src={surface} />
+              <img src={surface} alt = "Surface" />
             </Row>
             <Row style = {{
               position: "absolute", 
-              top: 155 + (this.state.selected[4] == 2 ? 100 : (this.state.selected[4] == 3 ? 200 : 10)),
-              transform: `rotate(-${this.state.selected[2] < 2 ? 15 : (this.state.selected[2] == 2 ? 45 : 85)}deg)`
+              top: 155 + (this.state.selected[4] === 2 ? 100 : (this.state.selected[4] === 3 ? 200 : 10)),
+              transform: `rotate(-${this.state.selected[2] < 2 ? 15 : (this.state.selected[2] === 2 ? 45 : 85)}deg)`
               }}>
-              <Row><img src = {rock} /></Row>
+              <Row><img src = {rock} alt = "Rock" /></Row>
               <Row>
                 <div style = {{
                   width:450,
@@ -181,14 +181,13 @@ class App extends React.Component {
                     <div style = {{
                       display: 'inline-block',
                       width: 10,
-                      height: 'parent',
                       backgroundColor: getColor(this.state.selected[3], idx),
                       height: (this.state.selected[1] ? this.state.selected[1] * 20 : 75),
                     }} />
                   ))}
                 </div>
               </Row>
-              <Row><img src = {rock} /></Row>
+              <Row><img src = {rock} alt = "Rock" /></Row>
             </Row>
           </Col>
           <Col className="columns3">
