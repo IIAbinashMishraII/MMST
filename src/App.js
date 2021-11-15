@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import './App.css';
 import surface from './surface.png';
 import rock from './rock.jpg'
@@ -168,21 +167,21 @@ class App extends React.Component {
             </Row>
             <Row style = {{
               position: "absolute", 
-              top: 155 + (this.state.selected[4] === 2 ? 100 : (this.state.selected[4] === 3 ? 200 : 10)),
-              transform: `rotate(-${this.state.selected[2] < 2 ? 15 : (this.state.selected[2] === 2 ? 45 : 85)}deg)`
+              top: 152 + (this.state.selected[4] === 2 ? 75 : (this.state.selected[4] === 3 ? 150 : 10)),
+              transform: `rotate(-${this.state.selected[2] < 2 ? 15 : (this.state.selected[2] === 2 ? 35 : 75)}deg)`
               }}>
               <Row><img src = {rock} alt = "Rock" /></Row>
               <Row>
                 <div style = {{
                   width:450,
-                  height: (this.state.selected[1] ? this.state.selected[1] * 20 : 75),
+                  height: (this.state.selected[1] ? this.state.selected[1] * 20 : 60),
                 }}>
                   {[...Array(40).keys()].map(idx => (
                     <div style = {{
                       display: 'inline-block',
                       width: 10,
                       backgroundColor: getColor(this.state.selected[3], idx),
-                      height: (this.state.selected[1] ? this.state.selected[1] * 20 : 75),
+                      height: (this.state.selected[1] ? this.state.selected[1] * 20 : 60),
                     }} />
                   ))}
                 </div>
@@ -205,11 +204,11 @@ class App extends React.Component {
           </Col>
         </Row>
       </Container>
-      <Button onClick = {this.handleShowResult}>Show Result</Button>
+      <div className="button" ><Button className="btn" onClick = {this.handleShowResult}>Show Result</Button></div>
       {
         this.state.showResult ? 
         <div className = "result" style = {{height: 600, backgroundColor: "red"}}>
-          
+          <strong>will be updated soon...</strong>
         </div> : <></>
       }
     </div>

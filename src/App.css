@@ -1,12 +1,12 @@
 html{
-  background-color: #ffffff;
+  background-color: #ff8a2a;
 }
 .body{
-  background-color: #ffffff;padding: auto;background-repeat:space ;
+  background-color: #fdd599;padding: auto;background-repeat:space ;
 }
 .Head{
-  border: 2px #ffffff ; color: #000000;text-align: center;font-weight: bold;font-size: 45px;padding: 10px;text-decoration: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;gap: 0px;text-shadow : 5px 2px 2px #5a5a5a, -3px 6px 5px #2c2c2c;;
+  border: 2px #ffffff ; color: #000000;text-align: center;font-weight: bold;font-size: 80px;padding: 10px;text-decoration: black;
+  gap: 0px;text-shadow : 5px 2px 2px #5a5a5a, -3px 6px 5px #2c2c2c;;
 }
 .rows{
   border: 2px solid #747474 ; color: #000000;text-align: center;font-weight: bold;font-size: 20px;padding: 0px; 
@@ -35,7 +35,24 @@ html{
 }
 .box{
   width: 150px;  overflow:visible;font-style:italic; color:rgb(0, 0, 0);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
-
+.button{
+  margin-left: 177px; 
+  padding: 5px;
+  text-align:justify;
+}
+.btn-primary {
+  background-color: rgb(3, 3, 36) !important;
+  border-color: rgb(5, 5, 26) !important;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: rgb(255, 161, 38) !important;
+  border-color: rgb(253, 170, 46) !important;
+}
+.result{
+  font-size: 100px;
+}
