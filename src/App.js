@@ -71,7 +71,7 @@ var def=Array(20)
   for(var i=0; i<20; i++) def[i]=0
 
 const getColor = (selected, idx) => {
-  if(idx === 0 || idx === 39) return "red"
+  if(idx === 0 || idx === 33) return "red"
   if(selected === 2) return ((idx & 1 ) ? "red" : "white")
   if(selected === 3) return ((Math.random() * 2) >= 1) ? "red" : "white"
   return "red"
@@ -112,12 +112,12 @@ class App extends React.Component {
       <Container>
         <Row className="Head"><strong>Mining Method Selection Tool</strong></Row> 
         <Row className="FRows">
-          <Col className="columns"><h3>Orebody Characteristics </h3></Col>
-          <Col className="columns"><h3>Orebody Illustration</h3></Col>
-          <Col className="columns"><h3>Mining Methods Ranking</h3></Col>
+          <Col className="cr11"><h3>Orebody Characteristics </h3></Col>
+          <Col className="cr12"><h3>Orebody Illustration</h3></Col>
+          <Col className="cr13"><h3>Mining Methods Ranking</h3></Col>
         </Row>
         <Row className="rows">
-          <Col className="columns">
+          <Col className="cr11">
           
             <Row><div className="rows1">Geometry and Grade Distribution
               { 
@@ -161,22 +161,22 @@ class App extends React.Component {
                       
           </Col>
           
-          <Col className="columns" style = {{position: "relative"}}>
+          <Col className="columns2" style = {{position: "relative"}}>
             <Row>
               <img src={surface} alt = "Surface" />
             </Row>
             <Row style = {{
               position: "absolute", 
-              top: 152 + (this.state.selected[4] === 2 ? 75 : (this.state.selected[4] === 3 ? 150 : 10)),
+              top: 152 + (this.state.selected[4] === 2 ? 75 : (this.state.selected[4] === 3 ? 120 : 10)),
               transform: `rotate(-${this.state.selected[2] < 2 ? 15 : (this.state.selected[2] === 2 ? 35 : 75)}deg)`
               }}>
-              <Row><img src = {rock} alt = "Rock" /></Row>
+              <Row><img style={{width:370}} src = {rock} alt = "Rock" /></Row>
               <Row>
                 <div style = {{
-                  width:450,
+                  width:370,
                   height: (this.state.selected[1] ? this.state.selected[1] * 20 : 60),
                 }}>
-                  {[...Array(40).keys()].map(idx => (
+                  {[...Array(34).keys()].map(idx => (
                     <div style = {{
                       display: 'inline-block',
                       width: 10,
@@ -186,7 +186,7 @@ class App extends React.Component {
                   ))}
                 </div>
               </Row>
-              <Row><img src = {rock} alt = "Rock" /></Row>
+              <Row><img style={{width:370}} src = {rock} alt = "Rock" /></Row>
             </Row>
           </Col>
           <Col className="columns3">

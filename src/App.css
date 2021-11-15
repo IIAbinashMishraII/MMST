@@ -2,23 +2,35 @@ html{
   background-color: #ff8a2a;
 }
 .body{
-  background-color: #fdd599;padding: auto;background-repeat:space ;
+  background-color: #ffca7a;padding: auto;background-repeat:space ;
 }
 .Head{
-  border: 2px #ffffff ; color: #000000;text-align: center;font-weight: bold;font-size: 80px;padding: 10px;text-decoration: black;
+  border: 2px #ffffff ; color: #000000;text-align: center;font-weight: bold;font-size:300%;padding: 10px;text-decoration: black;
   gap: 0px;text-shadow : 5px 2px 2px #5a5a5a, -3px 6px 5px #2c2c2c;;
 }
 .rows{
   border: 2px solid #747474 ; color: #000000;text-align: center;font-weight: bold;font-size: 20px;padding: 0px; 
-  background-color: #9febf8;gap: 0px;
+  background-color: #ffffff;gap: 0px;
 }
-.columns{
+.cr11{
   border: 2px solid #747474;color: #272727;font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;padding: 0 px;background-color: white;
+  text-align: center;padding: 0 px;background-color: rgb(255, 255, 255)!important;
+}
+.cr12{
+  border: 2px solid #747474;color: #272727;font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;padding: 0 px;background-color: rgb(255, 255, 255)!important;
+}
+.cr13{
+  border: 2px solid #747474;color: #272727;font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;padding: 0 px;background-color: rgb(255, 255, 255)!important;
 }
 .rows1{
   background-color: #1a1a1a;border: 2px #747474;color: #f7e7e7;text-align: center!important;padding: 0 px;   
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif!important;
+}
+.columns2{
+  background-color: #ffffff;border: 1px solid #747474;padding-top: 0px;font-family: sans-serif!important;font-stretch: ultra-expanded;
+  color: #ffffff;font-family: Tahoma;
 }
 .columns3{
   background-color: #1a1a1a;border: 1px solid #747474;padding-top: 0px;font-family: sans-serif!important;font-stretch: ultra-expanded;
@@ -38,8 +50,7 @@ html{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 .button{
-  margin-left: 177px; 
-  padding: 5px;
+  padding: 10px;
   text-align:justify;
 }
 .btn-primary {
