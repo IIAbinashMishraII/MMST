@@ -1,40 +1,31 @@
-html{
-  background-color: #ff8a2a;
-}
 .body{
-  background-color: #ffca7a;padding: auto;background-repeat:space ;
+  background-color: #d6fafc;padding: auto;background-repeat:space ;
 }
 .Head{
-  border: 2px #ffffff ; color: #000000;text-align: center;font-weight: bold;font-size:300%;padding: 10px;text-decoration: black;
-  gap: 0px;text-shadow : 5px 2px 2px #5a5a5a, -3px 6px 5px #2c2c2c;;
+  border: 2px #ffffff ; color: #000000;text-align: center;;font-size:300%;padding: 10px;text-decoration: black;
+  gap: 0px;text-shadow : 5px 2px 2px #ffffff;
 }
 .rows{
-  border: 2px solid #747474 ; color: #000000;text-align: center;font-weight: bold;font-size: 20px;padding: 0px; 
+  border: 2px solid #7c7c7c ; color: #000000;text-align: center;;font-size: 20px;padding: 0px; 
   background-color: #ffffff;gap: 0px;
+  min-height: 625px!important;
 }
 .cr11{
-  border: 2px solid #747474;color: #272727;font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;padding: 0 px;background-color: rgb(255, 255, 255)!important;
-}
-.cr12{
-  border: 2px solid #747474;color: #272727;font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;padding: 0 px;background-color: rgb(255, 255, 255)!important;
-}
-.cr13{
-  border: 2px solid #747474;color: #272727;font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  text-align: center;padding: 0 px;background-color: rgb(255, 255, 255)!important;
+  border: 2px solid #474747;color: #272727;;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;padding: 0 px;background-color: #a0a0a0!important;
 }
 .rows1{
-  background-color: #1a1a1a;border: 2px #747474;color: #f7e7e7;text-align: center!important;padding: 0 px;   
+  background-color: #a0a0a0;border: 2px #747474;color: #000000;text-align: center!important;padding: 0 px;   
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif!important;
+  height: 100%!important;
 }
 .columns2{
   background-color: #ffffff;border: 1px solid #747474;padding-top: 0px;font-family: sans-serif!important;font-stretch: ultra-expanded;
   color: #ffffff;font-family: Tahoma;
 }
 .columns3{
-  background-color: #1a1a1a;border: 1px solid #747474;padding-top: 0px;font-family: sans-serif!important;font-stretch: ultra-expanded;
-  color: #ffffff;font-family: Tahoma;
+  background-color: #afafaf;border: 1px solid #747474;padding-top: 0px;font-family: sans-serif!important;font-stretch: ultra-expanded;
+  color: #000000;font-family: Tahoma;
 }
 .select-row{
   display: block;border: 1px solid #747474;margin-top: 0px;margin-bottom: 0px;
@@ -51,7 +42,7 @@ html{
 }
 .button{
   padding: 10px;
-  text-align:justify;
+  text-align:right;
 }
 .btn-primary {
   background-color: rgb(3, 3, 36) !important;
@@ -64,6 +55,34 @@ html{
   background-color: rgb(255, 161, 38) !important;
   border-color: rgb(253, 170, 46) !important;
 }
+.Introduction{
+  border: 2px #ffffff ; color: #000000;text-align: center;;font-size:300%;padding: 10px;text-decoration: black;
+  gap: 0px;text-shadow : 5px 2px 2px #ffffff;
+}
+.Disclaimer{
+  border: 2px #ffffff ; color: #000000;text-align: center;;font-size:300%;padding: 10px;text-decoration: black;
+  gap: 0px;text-shadow : 5px 2px 2px #ffffff;
+}
 .result{
   font-size: 100px;
+}
+.table td{
+  border: rgb(0, 0, 0) solid 2px !important;
+}
+.table th{
+  border: rgb(0, 0, 0) solid 2px !important;
+}
+.overlay{
+  text-align: right;
+}
+.rcol{
+  height: inherit!important;
+}
+.FRows{
+  background-color: white!important;
+  border: 2px solid #474747;color: #272727;;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;padding: 0 px;
+}
+.col{
+  min-width: 350px!important;
 }
