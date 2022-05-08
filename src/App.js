@@ -3,7 +3,7 @@ import surface from './surface.png';
 import rock from './rock.jpg'
 import Select from 'react-select'
 import React from 'react'
-import {Container,Row,Col,Button,Table,OverlayTrigger,Tooltip} from 'react-bootstrap'
+import {Container,Row,Col,Button,Table} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 const erratic = ['red', 'white', 'white', 'red', 'red', 'red', 'white', 'white', 'red', 'red', 'white', 'red', 'white', 'white', 'red', 'red', 'white', 'white', 'white', 'red', 'white', 'white', 'red', 'red', 'red', 'white', 'red', 'white', 'red', 'red', 'red', 'white', 'white', 'red']
 const gngselectOptions = [
