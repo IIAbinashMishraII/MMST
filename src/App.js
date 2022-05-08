@@ -129,25 +129,31 @@ class App extends React.Component {
         {/* <div className="Introduction">Introduction</div> */}
         <Container>
           <Col>
-          <Row className="Head"><strong>Selected</strong></Row>
+          <Row className="Head"><strong>Selected Parameters</strong></Row>
           {gngselectOptions.map((field, idx) => (
             <div className = "select-row">
-                <strong>{field.text}</strong> : {this.state.selected[0+idx] > 0 ? field.options[this.state.selected[0+idx]-1].label : "Not Selected"}
+              <Row>
+                <Col><strong>{field.text}</strong></Col>:<Col>{this.state.selected[0+idx] > 0 ? field.options[this.state.selected[0+idx]-1].label : "Not Selected"}</Col>
+              </Row>
             </div>
           ))}
           {rmrselectOptions.map((field, idx) => (
             <div className = "select-row">
-                <strong>{field.text}</strong> : {this.state.selected[6+idx] > 0 ? field.options[this.state.selected[6+idx]-1].label : "Not Selected"}
+                <Row>
+                <Col><strong>{field.text}</strong></Col>:<Col>{this.state.selected[6+idx] > 0 ? field.options[this.state.selected[6+idx]-1].label : "Not Selected"}</Col>
+                </Row>
             </div>
           ))}
           {rssselectOptions.map((field, idx) => (
             <div className = "select-row">
-                <strong>{field.text}</strong> : {this.state.selected[11+idx] > 0 ? field.options[this.state.selected[11+idx]-1].label : "Not Selected"}
+              <Row>
+                <Col><strong>{field.text}</strong></Col>:<Col>{this.state.selected[11+idx] > 0 ? field.options[this.state.selected[11+idx]-1].label : "Not Selected"}</Col>
+              </Row>
             </div>
           ))}
           </Col>
           <Col>
-          <Row className="Head"><strong>Mining Methods</strong></Row>
+          <Row className="Head"><strong>Ranking of Mining Methods</strong></Row>
           <Table bordered className="table" size="sm">
           <thead><tr><th>Sl.No</th> <th>Method</th> <th>Scores</th></tr></thead>
           {this.generateRes().map((method, idx)=>(
